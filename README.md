@@ -21,11 +21,11 @@ Git changes between commits
 ```
 git reset commitId --hard
 git reset commitId --soft
-git checkout commitId filename
 ```
 
 Git logging
 ```
+git log
 git log --stat
 ```
 
