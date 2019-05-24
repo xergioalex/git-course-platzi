@@ -29,4 +29,16 @@ git log
 git log --stat
 ```
 
+Git branching
+```
+git branch new_branch
+git checkout new_branch
+git branch
+```
+
+Git merge
+```
+git merge master
+```
+
 
