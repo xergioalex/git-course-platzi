@@ -13,8 +13,8 @@ git commit -am "Message"  // Commit changes with current changes in staging addi
 
 Initial configuration before push changes:
 ```shell
-git config --global user.email "you@email.com"  // Base user email config 
-git config --global user.name "Your name"       // Base user name config 
+git config --global user.email "you@email.com"  // Base user email config
+git config --global user.name "Your name"       // Base user name config
 git config -l                                   // List git user config
 ```
 
@@ -74,5 +74,15 @@ ssh-add -K ~/.ssh/id_rsa
 
 Git aliases
 ```
-alias arbolito="git log --all --graph --decorate --oneline" 
+alias arbolito="git log --all --graph --decorate --oneline"
+```
+
+Git tags
+```
+git tag -a nombre-del-tag id-del-commit // Crear un nuevo tag y asignarlo a un commit:
+git tag -d nombre-del-tag // Borrar un tag en el repositorio local
+git tag o git show-refs --tags // Listar los tags de nuestro repositorio local
+git push origin --tags // Publicar un tag en el repositorio remoto
+git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag // Borrar un tag del repositorio remoto
+
 ```
