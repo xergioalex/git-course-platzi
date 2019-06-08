@@ -34,9 +34,10 @@ git log --all --graph --decorate --oneline  // Show git history showing all bran
 
 Git branching
 ```shell
-git branch new_branch     //
-git checkout new_branch   //
-git branch                //
+git branch new_branch
+git checkout new_branch
+git branch
+git show-branch --all
 ```
 
 Git merge
@@ -78,11 +79,17 @@ alias arbolito="git log --all --graph --decorate --oneline"
 ```
 
 Git tags
+```shell
+git tag -a nombre-del-tag id-del-commit   // Create a new tag && assing it to commit
+git tag -d nombre-del-tag                 // Delete tag in local repository
+git tag o git show-refs --tags            // List all tags in local repository
+git push origin --tags                    // Publish tag in remote repository
+git tag -d nombre-del-tag                 // Delete tag in local repository
+git push origin :refs/tags/nombre-del-tag // Delete tag in remote repository
 ```
-git tag -a nombre-del-tag id-del-commit // Crear un nuevo tag y asignarlo a un commit:
-git tag -d nombre-del-tag // Borrar un tag en el repositorio local
-git tag o git show-refs --tags // Listar los tags de nuestro repositorio local
-git push origin --tags // Publicar un tag en el repositorio remoto
-git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag // Borrar un tag del repositorio remoto
 
+
+Git clone
+```
+git clone repository_url
 ```
