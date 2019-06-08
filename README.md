@@ -93,3 +93,63 @@ Git clone
 ```
 git clone repository_url
 ```
+
+Git rebase: Reorganizing history
+```
+git rebase master
+```
+
+Git stash
+```
+git stash                    // Store temporal changes
+git stash list               // List temporal changes
+git stash pop                // Reestablish temporal store changes
+git stash branch branch_name // Create new branch based on stash changes
+git stash drop               // Delete stash changes
+```
+
+Git clean
+```
+git clean --dry-run
+git clean -f
+```
+
+Git cherry-pick
+```
+git cherry-pick commitId
+```
+
+Git restart commit
+```
+git commit --amend
+```
+
+
+Git reset
+```
+git reset --soft HEAD_Hash
+git reset --hard HEAD_Hash
+```
+
+Git reflog
+```
+git reflog
+```
+
+
+Search files
+```
+git grep -c "<p>"
+git log --all --grep="Palabra"
+```
+
+More commands
+```
+git shortlog -sn --all --no-merges
+git config --global alias.stats "shortlog -sn --all --no-merges"
+git blame file.txt
+git help blame
+git blame css/styles.css -L35,53
+git branch -r
+git branch -a
+```
